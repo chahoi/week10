@@ -48,20 +48,47 @@ console.log(fruits)
 fruits.shift(fruits)
 console.log(fruits)
 
-for (let item of fruits)
-    {
-        console(item);
-    }
+// for (let item of fruits)
+//     {
+//         console(item);
+//     }
 
-    const person -{
-        name: ["bob", "smith"],
-        age: 32,
-        gemder: 'male',
-        interests: ["music", "skiing"],
-    }
+//     const person -{
+//         name: ["bob", "smith"],
+//         age: 32,
+//         gemder: 'male',
+//         interests: ["music", "skiing"],
+//     }
 // console.log(`My name is ${person.name[0]} . ${person.interest[0]}`
 
-for (let prop in person)
+// for (let prop in person)
+// {
+//     console.log(`my name is ${prop} is ${person[prop]}`)
+// }
+
+let student1 = {
+    ID: "A00022",
+    GPA: 3.0,
+    program: "CIT"
+    };
+    let student2 = {
+    ID: "A01000",
+    GPA: 3.1,
+    program: "CST"
+    };
+    let student3 = {
+    ID: "A00114",
+    GPA: 3.2,
+    program: "CIT"
+    };
+let students = [student1, student2, student3];
+let counter = 0;
+for (let stud of students)
 {
-    console.log(`my name is ${prop} is ${person[prop]}`)
+    if (stud.program === "CIT" && stud.GPA > 3)
+    {
+        counter++;
+    }
 }
+console.log(counter);
+    
