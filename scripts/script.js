@@ -91,4 +91,9 @@ for (let stud of students)
     }
 }
 console.log(counter);
+
+// for (let i = 0; i < students.length; i++)
+// {
+//     if(students[i].program)
+// }
     
