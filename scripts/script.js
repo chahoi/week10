@@ -13,3 +13,15 @@
 //     i = i*2;
 // } while(i <= 1024);
 // console.log(i)
+
+let input = "";
+let numInput = "";
+do {
+    input = prompt("What is your name ");
+    // console.log(Number(input));
+}
+while(
+    // !isNaN(input)
+    Number(input) || input == 0
+);
+console.log(input);
