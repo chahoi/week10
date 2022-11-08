@@ -21,7 +21,11 @@ do {
     // console.log(Number(input));
 }
 while(
-    // !isNaN(input)
-    Number(input) || input == 0
+    !isNaN(input)
+    // Number(input) || input == 0
 );
 console.log(input);
+
+//Template literal.
+// alert("Welcome " + input);
+alert(`welcome ${input}`);
